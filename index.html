@@ -9,7 +9,7 @@
   <p>Recarregue a página ao abrir e digite os valores no prompt (separadas por vírgula). Recarregue a página para colocar novos valores.</p>
 
   <script>
-    let notasPrompt = prompt("Digite os numero ai, separadas por vírgula: ");
+    let notasPrompt = prompt("Digite os valores, separadas por vírgula: ");
     let notas = notasPrompt.split(",");
     let notasInteiros = notas.map(Number);
     let media;
@@ -21,7 +21,7 @@
         }
 
         media = soma / notasInteiros.length;
-            alert("A média é: " + media);
+            alert("A média dos valores é: " + media);
     }
 
     mediaCalcular();
@@ -29,4 +29,5 @@
 </body>
 
 </html>
+
 
