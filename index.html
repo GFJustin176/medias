@@ -6,10 +6,10 @@
 </head>
 <body>
   <h1>Calculadora de Média</h1>
-  <p>Ao abrir a página, digite as notas no prompt (separadas por vírgula). O resultado aparecerá no console.</p>
+  <p>Ao abrir a página, digite as notas no prompt (separadas por vírgula).</p>
 
   <script>
-    let notasPrompt = prompt("Digite suas notas, separadas por vírgula: ");
+    let notasPrompt = prompt("Digite os numero ai, separadas por vírgula: ");
     let notas = notasPrompt.split(",");
     let notasInteiros = notas.map(Number);
     let media;
@@ -21,16 +21,11 @@
         }
 
         media = soma / notasInteiros.length;
-
-        if (media > 10) {
-            console.log("A média máxima é 10");
-            return;
-        } else {
-            console.log("A média é: " + media);
-        }
+            alert("A média é: " + media);
     }
 
     mediaCalcular();
   </script>
 </body>
+
 </html>
